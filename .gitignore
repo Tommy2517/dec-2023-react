@@ -27,4 +27,9 @@ yarn-error.log*
 .idea/*
 .idea/**
 
+.idea/misc.xml
+.idea/modules.xml
+.idea/workspace.xml
+
+
 #git rm .idea/ -r --cached
