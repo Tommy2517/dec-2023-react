@@ -6,7 +6,7 @@ const CarForm = ({setAllCars}) => {
     const {register, handleSubmit, reset, formState: {errors, isValid}} = useForm({mode: 'all'});
     const save = async (car) => {
         const {data} = await carService.create(car);
-        setAllCars(prev => prev)
+        setAllCars(prev => !prev)
         console.log(data);
     }
 

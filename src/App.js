@@ -1,16 +1,17 @@
-import {useEffect} from "react";
+import {useEffect, useState} from "react";
 import axios from "axios";
 import Cars from "./components/Cars/Cars";
 
 
 
 function App() {
-    useEffect(() => {
-        axios('owu.linkpc.net/carsAPI/v1')
-    },[]);
+let q = 0;
+const [up,setUp] = useState(null);
+
 
   return (
     <div>
+        <button onClick={setUp}></button>
         <Cars/>
     </div>
 
